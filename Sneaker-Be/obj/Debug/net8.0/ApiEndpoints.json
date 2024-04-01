@@ -1,16 +1,6 @@
 [
   {
     "ContainingType": "Sneaker_Be.Controllers.SneakerController",
-    "Method": "GetCategories",
-    "RelativePath": "api/sneaker",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Sneaker_Be.Controllers.SneakerController",
     "Method": "GetUser",
     "RelativePath": "api/sneaker",
     "HttpMethod": "POST",
@@ -18,11 +8,21 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "myUser",
-        "Type": "Sneaker_Be.Entities.User",
-        "IsRequired": true
+        "Name": "phoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.SneakerController",
+    "Method": "GetCategories",
+    "RelativePath": "api/sneaker/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

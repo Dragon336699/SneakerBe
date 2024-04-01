@@ -19,12 +19,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddControllers();
 
-builder.Services.AddDbContext<SneakerDbContext>(options =>
- options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection")));
-builder.Services.AddIdentity<User, IdentityRole>()
-    .AddEntityFrameworkStores<SneakerDbContext>()
-    .AddDefaultTokenProviders();
-
 builder.Services.ConfigureTransient();
 builder.Services.ConfigureAuthen(builder.Configuration);
 
@@ -37,9 +31,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseRouting();
+app.UseAuthentication();
 
 app.UseAuthorization();
-app.UseAuthentication(); // Bắt buộc để app sử dụng authen
+// Bắt buộc để app sử dụng authen
 
 app.MapControllers();
 
