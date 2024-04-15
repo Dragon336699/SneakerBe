@@ -18,5 +18,6 @@ namespace Sneaker_Be.Entities
         public DateTime created_at {  get; set; }
         public DateTime date_of_birth { get; set; }
         public DateTime updated_at { get; set;}
+        public List<Order> orders { get; set; } = new List<Order>();
     }
 }

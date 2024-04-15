@@ -4,7 +4,7 @@ using Sneaker_Be.Context;
 using Sneaker_Be.Entities;
 using Sneaker_Be.Features.Queries;
 
-namespace Sneaker_Be.Handler
+namespace Sneaker_Be.Handler.QueryHandler
 {
     public class GetCategoriesHandler : IRequestHandler<GetCategories, IEnumerable<Category>>
     {

@@ -1,14 +1,97 @@
 [
   {
-    "ContainingType": "Sneaker_Be.Controllers.SneakerController",
-    "Method": "GetUser",
+    "ContainingType": "Sneaker_Be.Controllers.UserController",
+    "Method": "Login",
     "RelativePath": "api/sneaker",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "phoneNumber",
+        "Name": "loginDetail",
+        "Type": "Sneaker_Be.Dtos.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.UserController",
+    "Method": "GetProfileUser",
+    "RelativePath": "api/sneaker",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.ProductController",
+    "Method": "GetCategories",
+    "RelativePath": "api/sneaker/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.ProductController",
+    "Method": "GetProductById",
+    "RelativePath": "api/sneaker/products/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.ProductController",
+    "Method": "GetAllProducts",
+    "RelativePath": "api/sneaker/products/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.ProductController",
+    "Method": "GetProductsViaPrice",
+    "RelativePath": "api/sneaker/products/price",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "min_price",
+        "Type": "System.Single",
+        "IsRequired": false
+      },
+      {
+        "Name": "max_price",
+        "Type": "System.Single",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.ProductController",
+    "Method": "SearchProducts",
+    "RelativePath": "api/sneaker/products/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -16,13 +99,19 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Sneaker_Be.Controllers.SneakerController",
-    "Method": "GetCategories",
-    "RelativePath": "api/sneaker/categories",
-    "HttpMethod": "GET",
+    "ContainingType": "Sneaker_Be.Controllers.UserController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/sneaker/register",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Sneaker_Be.Entities.User",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

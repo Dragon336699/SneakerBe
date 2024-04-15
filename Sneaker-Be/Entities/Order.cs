@@ -18,5 +18,6 @@
         public DateTime ShippingDate { get; set; }
         public string TrackingNumber { get; set; }
         public string PaymentMethod { get; set; }
+        public List<OrderDetail> ordersDetail { get; set; } = new List<OrderDetail>();
     }
 }

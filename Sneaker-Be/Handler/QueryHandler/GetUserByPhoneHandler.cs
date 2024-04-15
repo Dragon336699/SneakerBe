@@ -4,7 +4,7 @@ using Sneaker_Be.Context;
 using Sneaker_Be.Entities;
 using Sneaker_Be.Features.Queries;
 
-namespace Sneaker_Be.Handler
+namespace Sneaker_Be.Handler.QueryHandler
 {
     public class GetUserByPhoneHandler : IRequestHandler<GetUserByPhone, User>
     {
@@ -18,7 +18,7 @@ namespace Sneaker_Be.Handler
             var query = "SELECT * FROM users WHERE phone_number=@PhoneNumber";
             using (var connection = _dapperContext.CreateConnection())
             {
-                var user = await connection.QueryFirstOrDefaultAsync<User>(query,new { request.PhoneNumber });
+                var user = await connection.QueryFirstOrDefaultAsync<User>(query, new { request.PhoneNumber });
                 if (user == null) { return null; }
                 return user;
             }

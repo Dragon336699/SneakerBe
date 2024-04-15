@@ -33,9 +33,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseRouting();
 app.UseAuthentication();
-
 app.UseAuthorization();
-// Bắt buộc để app sử dụng authen
 
 app.MapControllers();
 
