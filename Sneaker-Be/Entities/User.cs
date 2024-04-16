@@ -3,9 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Sneaker_Be.Entities
 {
-    public class User
+    public class User : IdentityUser
     {
-
         public int Id { get; set; }
         public string FullName { get; set; }
         public string Address { get; set; }

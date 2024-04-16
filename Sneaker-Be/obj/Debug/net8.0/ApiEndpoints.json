@@ -1,24 +1,8 @@
 [
   {
-    "ContainingType": "Sneaker_Be.Controllers.UserController",
-    "Method": "Login",
-    "RelativePath": "api/sneaker",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "loginDetail",
-        "Type": "Sneaker_Be.Dtos.LoginDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Sneaker_Be.Controllers.UserController",
-    "Method": "GetProfileUser",
-    "RelativePath": "api/sneaker",
+    "ContainingType": "Sneaker_Be.Controllers.CartController",
+    "Method": "GetCarts",
+    "RelativePath": "api/sneaker/carts",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -42,13 +26,40 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Sneaker_Be.Controllers.ProductController",
-    "Method": "GetCarts",
-    "RelativePath": "api/sneaker/carts",
-    "HttpMethod": "GET",
+    "ContainingType": "Sneaker_Be.Controllers.CartController",
+    "Method": "UpdateProductToCart",
+    "RelativePath": "api/sneaker/carts/{id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "product",
+        "Type": "Sneaker_Be.Dtos.AddProductToCartDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.CartController",
+    "Method": "DeleteProductToCart",
+    "RelativePath": "api/sneaker/carts/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -59,6 +70,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.OrderController",
+    "Method": "PostOrder",
+    "RelativePath": "api/sneaker/orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "order",
+        "Type": "Sneaker_Be.Entities.Order",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -126,8 +153,34 @@
   },
   {
     "ContainingType": "Sneaker_Be.Controllers.UserController",
+    "Method": "GetProfileUser",
+    "RelativePath": "api/sneaker/users/details",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/sneaker/users/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDetail",
+        "Type": "Sneaker_Be.Dtos.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.UserController",
     "Method": "RegisterUser",
-    "RelativePath": "api/sneaker/register",
+    "RelativePath": "api/sneaker/users/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "ASPSMS": {
+              "target": "Package",
+              "version": "[0.0.2, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.1.35, )"
@@ -102,6 +106,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[7.4.1, )"
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             }
           },
           "imports": [

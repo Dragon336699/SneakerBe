@@ -1,17 +1,15 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
 using Sneaker_Be.Dtos;
 using Sneaker_Be.Entities;
-using Sneaker_Be.Features.Command;
-using Sneaker_Be.Features.Queries;
+using Sneaker_Be.Features.Command.UserCommand;
+using Sneaker_Be.Features.Queries.UserQuery;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using System.Web;
 
 namespace Sneaker_Be.Controllers
 {
@@ -27,28 +25,35 @@ namespace Sneaker_Be.Controllers
             _configuration = configuration;
         }
         [HttpPost]
-        [Route("register")]
+        [Route("users/register")]
         public async Task<IActionResult> RegisterUser(User user)
         {
             var res = await _mediator.Send(new RegisterUserCommand(user.FullName, user.Address,user.Password,user.phone_number,user.date_of_birth));
             if (res == "Đăng ký thành công")
             {
-                return Ok(res);
+                return Ok(new {message = res});
+            } else
+            {
+                return BadRequest(new { message = res });
             }
-            return BadRequest(res);
         }
 
         [HttpPost]
+        [Route("users/login")]
         public async Task<IActionResult> Login(LoginDto loginDetail)
         {
             //IActionResult response = Unauthorized();
             var user = await _mediator.Send(new GetUserByPhone(loginDetail.PhoneNumber));
             if (user == null) { return BadRequest("Người dùng không tồn tại"); }
             string token = GenerateJSonWebToken(user);
-            return  Ok(new { token = token });
+            return  Ok(new {
+                message = "Đăng nhập thành công",
+                token = token 
+            });
         }
 
         [HttpGet]
+        [Route("users/details")]
         [Authorize]
         public async Task<IActionResult> GetProfileUser()
         {
