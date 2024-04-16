@@ -26,6 +26,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Sneaker_Be.Controllers.CartController",
+    "Method": "AddProductToCart",
+    "RelativePath": "api/sneaker/carts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "Sneaker_Be.Dtos.AddProductToCartDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.ProductController",
+    "Method": "GetCarts",
+    "RelativePath": "api/sneaker/carts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Sneaker_Be.Controllers.ProductController",
     "Method": "GetCategories",
     "RelativePath": "api/sneaker/categories",

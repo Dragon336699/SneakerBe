@@ -1,7 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Net.Http.Headers;
 using Sneaker_Be.Features.Queries;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace Sneaker_Be.Controllers
 {
@@ -51,6 +53,19 @@ namespace Sneaker_Be.Controllers
         public async Task<IActionResult> SearchProducts([FromQuery(Name = "keyword")] string key)
         {
             return Ok(await _mediator.Send(new SearchProducts(key)));
+        }
+
+        [HttpGet]
+        [Route("carts")]
+        [Authorize]
+        public async Task<IActionResult> GetCarts()
+        {
+            var accessToken = Request.Headers[HeaderNames.Authorization].ToString().Substring("Bearer ".Length).Trim();
+            var handler = new JwtSecurityTokenHandler();
+            var jwt = handler.ReadJwtToken(accessToken);
+            var claims = jwt.Claims.FirstOrDefault(c => c.Type == "UserId");
+            var userId = claims.Value;
+            return Ok(await _mediator.Send(new GetCart(Int32.Parse(userId))));
         }
     }
 }

@@ -19,10 +19,12 @@ namespace Sneaker_Be.AddTransientCollection
             services.AddTransient<IRequestHandler<GetCategories, IEnumerable<Category>>, GetCategoriesHandler>();
             services.AddTransient<IRequestHandler<GetUserByPhone, User>, GetUserByPhoneHandler>();
             services.AddTransient<IRequestHandler<RegisterUserCommand, string>, RegisterUserCommandHandler>();
+            services.AddTransient<IRequestHandler<AddProductToCartCommand, string>, AddProductToCartCommandHandler>();
             services.AddTransient<IRequestHandler<GetAllProducts, AllProductDto>, GetAllProductHandler>();
             services.AddTransient<IRequestHandler<GetProductById, Product>, GetProductByIdHandler>();
             services.AddTransient<IRequestHandler<GetProductViaPrice, AllProductDto>, GetProductViaPriceHandler>();
             services.AddTransient<IRequestHandler<SearchProducts, AllProductDto>, SearchProductHandler>();
+            services.AddTransient<IRequestHandler<GetCart, ProductFromCartDto>, GetCartHandler>();
         }
 
         public static void ConfigureAuthen(this IServiceCollection services, IConfiguration configuration)

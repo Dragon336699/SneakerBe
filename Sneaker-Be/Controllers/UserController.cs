@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Net.Http.Headers;
 using Sneaker_Be.Dtos;
 using Sneaker_Be.Entities;
 using Sneaker_Be.Features.Command;
@@ -20,7 +21,6 @@ namespace Sneaker_Be.Controllers
     {
         private readonly IMediator _mediator;
         private IConfiguration _configuration;
-        private string _myToken ;
         public UserController(IMediator mediator, IConfiguration configuration)
         {
             _mediator = mediator;
@@ -45,7 +45,6 @@ namespace Sneaker_Be.Controllers
             var user = await _mediator.Send(new GetUserByPhone(loginDetail.PhoneNumber));
             if (user == null) { return BadRequest("Người dùng không tồn tại"); }
             string token = GenerateJSonWebToken(user);
-            _myToken = token;
             return  Ok(new { token = token });
         }
 
@@ -53,8 +52,9 @@ namespace Sneaker_Be.Controllers
         [Authorize]
         public async Task<IActionResult> GetProfileUser()
         {
+            var accessToken = Request.Headers[HeaderNames.Authorization].ToString().Substring("Bearer ".Length).Trim();
             var handler = new JwtSecurityTokenHandler();
-            var jwt = handler.ReadJwtToken(_myToken);
+            var jwt = handler.ReadJwtToken(accessToken);
             var claims = jwt.Claims.FirstOrDefault(c => c.Type == "PhoneNumber");
             var phoneNumber = claims.Value;
             var user = await _mediator.Send(new GetUserByPhone(phoneNumber));

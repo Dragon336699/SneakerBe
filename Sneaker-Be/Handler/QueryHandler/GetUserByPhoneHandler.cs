@@ -15,7 +15,7 @@ namespace Sneaker_Be.Handler.QueryHandler
         }
         public async Task<User> Handle(GetUserByPhone request, CancellationToken cancellationToken)
         {
-            var query = "SELECT * FROM users WHERE phone_number=@PhoneNumber";
+            var query = "SELECT u.id,u.fullname,u.address,u.phone_number,u.date_of_birth FROM users u WHERE phone_number=@PhoneNumber";
             using (var connection = _dapperContext.CreateConnection())
             {
                 var user = await connection.QueryFirstOrDefaultAsync<User>(query, new { request.PhoneNumber });
