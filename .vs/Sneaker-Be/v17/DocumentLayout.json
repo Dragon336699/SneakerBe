@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\handler\\queryhandler\\productquery\\getrelateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\handler\\queryhandler\\productquery\\getrelateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\dtos\\userdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\dtos\\userdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\handler\\queryhandler\\userquery\\getuserbyphonehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\handler\\queryhandler\\userquery\\getuserbyphonehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\features\\queries\\userquery\\getuserbyphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\features\\queries\\userquery\\getuserbyphone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\addservicecollection\\addtransient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\addservicecollection\\addtransient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\handler\\commandhandler\\usercommand\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\handler\\commandhandler\\usercommand\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\handler\\queryhandler\\productquery\\getrelateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\handler\\queryhandler\\productquery\\getrelateproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\handler\\queryhandler\\productquery\\getallproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\handler\\queryhandler\\order\\gethistoryorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\handler\\queryhandler\\order\\gethistoryorderhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\handler\\queryhandler\\productquery\\searchproducthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,10 +111,6 @@
       "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\features\\command\\ordercommand\\postordercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\dtos\\productfromcartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\dtos\\productfromcartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -121,10 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\entities\\socialaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\entities\\socialaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|solutionrelative:sneaker-be\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BF83FAF-2D4A-4E0E-AE8C-CA5776B8520F}|Sneaker-Be\\Sneaker-Be.csproj|c:\\users\\ad\\onedrive\\desktop\\sneaker web ttcs\\sneaker-be\\sneaker-be\\features\\command\\cartcommand\\updatecartcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -158,7 +174,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -175,58 +191,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GetAllProductHandler.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetAllProductHandler.cs",
-              "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetAllProductHandler.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetAllProductHandler.cs",
-              "RelativeToolTip": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetAllProductHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABLAAAA",
+              "Title": "GetUserByPhone.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Queries\\UserQuery\\GetUserByPhone.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Features\\Queries\\UserQuery\\GetUserByPhone.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Queries\\UserQuery\\GetUserByPhone.cs",
+              "RelativeToolTip": "Sneaker-Be\\Features\\Queries\\UserQuery\\GetUserByPhone.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T17:53:07.105Z",
+              "WhenOpened": "2024-04-17T19:07:06.566Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetRelateProduct.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Queries\\ProductQuery\\GetRelateProduct.cs",
-              "RelativeDocumentMoniker": "Sneaker-Be\\Features\\Queries\\ProductQuery\\GetRelateProduct.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Queries\\ProductQuery\\GetRelateProduct.cs",
-              "RelativeToolTip": "Sneaker-Be\\Features\\Queries\\ProductQuery\\GetRelateProduct.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAmAAAA",
+              "DocumentIndex": 1,
+              "Title": "UserDetailDto.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Dtos\\UserDetailDto.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Dtos\\UserDetailDto.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Dtos\\UserDetailDto.cs",
+              "RelativeToolTip": "Sneaker-Be\\Dtos\\UserDetailDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T17:46:49.084Z",
+              "WhenOpened": "2024-04-17T19:08:11.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetRelateProductHandler.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetRelateProductHandler.cs",
-              "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetRelateProductHandler.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetRelateProductHandler.cs*",
-              "RelativeToolTip": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetRelateProductHandler.cs*",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAawBIAAACKAAAA",
+              "DocumentIndex": 7,
+              "Title": "RegisterUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\CommandHandler\\UserCommand\\RegisterUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\CommandHandler\\UserCommand\\RegisterUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\CommandHandler\\UserCommand\\RegisterUserCommandHandler.cs",
+              "RelativeToolTip": "Sneaker-Be\\Handler\\CommandHandler\\UserCommand\\RegisterUserCommandHandler.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwB4AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T17:46:37.109Z",
+              "WhenOpened": "2024-04-17T18:31:14.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetProductByIdHandler.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductByIdHandler.cs",
-              "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductByIdHandler.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductByIdHandler.cs",
-              "RelativeToolTip": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductByIdHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "GetUserByPhoneHandler.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\UserQuery\\GetUserByPhoneHandler.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\UserQuery\\GetUserByPhoneHandler.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\UserQuery\\GetUserByPhoneHandler.cs",
+              "RelativeToolTip": "Sneaker-Be\\Handler\\QueryHandler\\UserQuery\\GetUserByPhoneHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T17:12:55.847Z",
+              "WhenOpened": "2024-04-17T18:30:58.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "GetHistoryOrderHandler.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\Order\\GetHistoryOrderHandler.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\Order\\GetHistoryOrderHandler.cs",
@@ -239,20 +255,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AddTransient.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\AddServiceCollection\\AddTransient.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\AddServiceCollection\\AddTransient.cs",
               "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\AddServiceCollection\\AddTransient.cs",
               "RelativeToolTip": "Sneaker-Be\\AddServiceCollection\\AddTransient.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAhwCwAAABvAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAhwC8AAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T08:56:31.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "GetHistoryOrder.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Queries\\Order\\GetHistoryOrder.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Features\\Queries\\Order\\GetHistoryOrder.cs",
@@ -265,20 +281,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Sneaker-Be\\Controllers\\UserController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAApwF8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T18:43:19.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Entities\\User.cs",
+              "RelativeToolTip": "Sneaker-Be\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBEAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T18:13:33.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Sneaker-Be\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAA3wDsAAABGAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAkwEEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T19:21:46.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetProductByIdHandler.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductByIdHandler.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductByIdHandler.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductByIdHandler.cs",
+              "RelativeToolTip": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductByIdHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:12:55.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "GetRelateProductHandler.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetRelateProductHandler.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetRelateProductHandler.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetRelateProductHandler.cs",
+              "RelativeToolTip": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetRelateProductHandler.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAawBkAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:46:37.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Sneaker-Be\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T10:09:39.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetRelateProduct.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Queries\\ProductQuery\\GetRelateProduct.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Features\\Queries\\ProductQuery\\GetRelateProduct.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Queries\\ProductQuery\\GetRelateProduct.cs",
+              "RelativeToolTip": "Sneaker-Be\\Features\\Queries\\ProductQuery\\GetRelateProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:46:49.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GetAllProductHandler.cs",
+              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetAllProductHandler.cs",
+              "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetAllProductHandler.cs",
+              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetAllProductHandler.cs",
+              "RelativeToolTip": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetAllProductHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T17:53:07.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "GetProductViaPriceHandler.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductViaPriceHandler.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\GetProductViaPriceHandler.cs",
@@ -291,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "SearchProductHandler.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\SearchProductHandler.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\ProductQuery\\SearchProductHandler.cs",
@@ -304,20 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Sneaker-Be\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Sneaker-Be\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAIA5wEIAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T10:09:39.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "HistoryOrderDto.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Dtos\\HistoryOrderDto.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Dtos\\HistoryOrderDto.cs",
@@ -330,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "GetOrderDetail.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Queries\\Order\\GetOrderDetail.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Features\\Queries\\Order\\GetOrderDetail.cs",
@@ -343,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "GetOrderDetailHandler.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\Order\\GetOrderDetailHandler.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\Order\\GetOrderDetailHandler.cs",
@@ -356,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Controllers\\CartController.cs",
@@ -369,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "AddProductToCartCommand.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Command\\CartCommand\\AddProductToCartCommand.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Features\\Command\\CartCommand\\AddProductToCartCommand.cs",
@@ -382,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "AddProductToCartCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\CommandHandler\\CartCommand\\AddProductToCartCommandHandler.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\CommandHandler\\CartCommand\\AddProductToCartCommandHandler.cs",
@@ -395,7 +489,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "AddProductToCartDto.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Dtos\\AddProductToCartDto.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Dtos\\AddProductToCartDto.cs",
@@ -408,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 29,
               "Title": "ProductInCartDto.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Dtos\\ProductInCartDto.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Dtos\\ProductInCartDto.cs",
@@ -421,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "InforOrderDto.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Dtos\\InforOrderDto.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Dtos\\InforOrderDto.cs",
@@ -434,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 27,
               "Title": "ProductFromCartDto.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Dtos\\ProductFromCartDto.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Dtos\\ProductFromCartDto.cs",
@@ -447,20 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Sneaker-Be\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Sneaker-Be\\Controllers\\UserController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAYwD4AAAB3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T18:43:19.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Entities\\Order.cs",
@@ -473,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "PostOrderCommand.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Command\\OrderCommand\\PostOrderCommand.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Features\\Command\\OrderCommand\\PostOrderCommand.cs",
@@ -486,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 28,
               "Title": "OrderDetail.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Entities\\OrderDetail.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Entities\\OrderDetail.cs",
@@ -499,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "PostOrderCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\CommandHandler\\OrderCommand\\PostOrderCommandHandler.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\CommandHandler\\OrderCommand\\PostOrderCommandHandler.cs",
@@ -512,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "UpdateCartCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\CommandHandler\\CartCommand\\UpdateCartCommandHandler.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\CommandHandler\\CartCommand\\UpdateCartCommandHandler.cs",
@@ -525,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "SocialAccount.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Entities\\SocialAccount.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Entities\\SocialAccount.cs",
@@ -538,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Entities\\Role.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Entities\\Role.cs",
@@ -551,7 +632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "ProductImage.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Entities\\ProductImage.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Entities\\ProductImage.cs",
@@ -564,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "GetCartHandler.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\QueryHandler\\CartQuery\\GetCartHandler.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\QueryHandler\\CartQuery\\GetCartHandler.cs",
@@ -577,20 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Sneaker-Be\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Entities\\User.cs",
-              "RelativeToolTip": "Sneaker-Be\\Entities\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBMAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T18:13:33.004Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "UpdateCartCommand.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Command\\CartCommand\\UpdateCartCommand.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Features\\Command\\CartCommand\\UpdateCartCommand.cs",
@@ -603,7 +671,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "DeleteProductFromCartCommand.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Features\\Command\\CartCommand\\DeleteProductFromCartCommand.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Features\\Command\\CartCommand\\DeleteProductFromCartCommand.cs",
@@ -616,7 +684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 38,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Program.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Program.cs",
@@ -629,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "SMSOptions.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Services\\SMSOptions.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Services\\SMSOptions.cs",
@@ -642,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "DeleteProductFromCartCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\AD\\OneDrive\\Desktop\\Sneaker Web TTCS\\Sneaker-Be\\Sneaker-Be\\Handler\\CommandHandler\\CartCommand\\DeleteProductFromCartCommandHandler.cs",
               "RelativeDocumentMoniker": "Sneaker-Be\\Handler\\CommandHandler\\CartCommand\\DeleteProductFromCartCommandHandler.cs",

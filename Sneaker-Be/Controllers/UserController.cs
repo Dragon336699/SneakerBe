@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
@@ -10,6 +11,7 @@ using Sneaker_Be.Features.Queries.UserQuery;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net.Mail;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
@@ -47,12 +49,28 @@ namespace Sneaker_Be.Controllers
         public async Task<IActionResult> Login(LoginDto loginDetail)
         {
             var user = await _mediator.Send(new GetUserByPhone(loginDetail.PhoneNumber));
+            
             if (user == null) { return BadRequest("Người dùng không tồn tại"); }
-            string token = GenerateJSonWebToken(user);
-            return  Ok(new {
-                message = "Đăng nhập thành công",
-                token = token 
-            });
+            byte[] salt = new byte[]
+            {
+                153, 9, 194, 39, 4, 123, 47, 99, 167, 242, 240, 77, 130, 225, 71, 96
+            };
+            string hashedPassword = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+               password: loginDetail.Password!,
+               salt: salt,
+               prf: KeyDerivationPrf.HMACSHA256,
+               iterationCount: 100000,
+               numBytesRequested: 256 / 8));
+            if (user.Password.Equals(hashedPassword))
+            {
+                string token = GenerateJSonWebToken(user);
+                return Ok(new
+                {
+                    message = "Đăng nhập thành công",
+                    token = token
+                });
+            }
+            return BadRequest("Mật khẩu không chính xác");
         }
 
         [HttpGet]
@@ -63,11 +81,19 @@ namespace Sneaker_Be.Controllers
             var accessToken = Request.Headers[HeaderNames.Authorization].ToString().Substring("Bearer ".Length).Trim();
             var handler = new JwtSecurityTokenHandler();
             var jwt = handler.ReadJwtToken(accessToken);
-            var claims = jwt.Claims.FirstOrDefault(c => c.Type == "PhoneNumber");
-            var phoneNumber = claims.Value;
+            var phoneNumber = jwt.Claims.FirstOrDefault(c => c.Type == "PhoneNumber").Value;
             var user = await _mediator.Send(new GetUserByPhone(phoneNumber));
+            var userDetail = new UserDetailDto
+            {
+                Id = user.Id,
+                FullName = user.FullName,
+                Address = user.Address,
+                phone_number = user.phone_number,
+                date_of_birth = user.date_of_birth,
+
+            };
             if (user == null) { return BadRequest("Lỗi thông tin"); }
-            return Ok(user);
+            return Ok(userDetail);
         }
 
         private string GenerateJSonWebToken(User user)
@@ -78,6 +104,7 @@ namespace Sneaker_Be.Controllers
             {
                 new Claim("PhoneNumber", user.phone_number),
                 new Claim("UserId", user.Id.ToString()),
+                new Claim(ClaimTypes.Role, user.role_id.ToString()),
             };
 
             var token = new JwtSecurityToken(_configuration["Jwt:Issuer"],

@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Sneaker_Be.Features.Queries;
 using Sneaker_Be.Features.Queries.ProductQuery;
@@ -58,6 +59,14 @@ namespace Sneaker_Be.Controllers
         public async Task<IActionResult> GetRelateProduct(int id)
         {
             return Ok(await _mediator.Send(new GetRelateProduct(id)));
+        }
+
+        [HttpPost]
+        [Route("products")]
+        [Authorize(Roles = "2")]
+        public async Task<IActionResult> test(int id)
+        {
+            return Ok();
         }
     }
 }

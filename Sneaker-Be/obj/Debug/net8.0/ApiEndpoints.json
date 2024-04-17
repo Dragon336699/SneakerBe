@@ -116,6 +116,22 @@
   },
   {
     "ContainingType": "Sneaker_Be.Controllers.ProductController",
+    "Method": "test",
+    "RelativePath": "api/sneaker/products",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.ProductController",
     "Method": "GetProductById",
     "RelativePath": "api/sneaker/products/{id}",
     "HttpMethod": "GET",

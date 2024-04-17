@@ -20,7 +20,10 @@ namespace Sneaker_Be.Handler.CommandHandler.UserCommand
             "SELECT @FullName, @PhoneNumber, @Address, @Password,@CreatedAt, @UpdatedAt, @IsActive,@DateOfBirth, @Facebook,@Google,@RoleId " +
             "WHERE NOT EXISTS (SELECT * FROM users WHERE phone_number = @PhoneNumber);";
             var queryUser = "SELECT * FROM users WHERE phone_number = @PhoneNumber;";
-            byte[] salt = RandomNumberGenerator.GetBytes(128 / 8);
+            byte[] salt = new byte[]
+            {
+                153, 9, 194, 39, 4, 123, 47, 99, 167, 242, 240, 77, 130, 225, 71, 96
+            };
 
             string hashedPassword = Convert.ToBase64String(KeyDerivation.Pbkdf2(
                 password: request.Password!,
