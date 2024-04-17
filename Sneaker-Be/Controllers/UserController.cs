@@ -90,7 +90,7 @@ namespace Sneaker_Be.Controllers
                 Address = user.Address,
                 phone_number = user.phone_number,
                 date_of_birth = user.date_of_birth,
-
+                role_id = user.role_id,
             };
             if (user == null) { return BadRequest("Lỗi thông tin"); }
             return Ok(userDetail);
