@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sneaker-Be")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+118a2f75e69dc66def857151dccc9bbc2d9200c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1eb2c3eba912efe66506121ec083127bea98525")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sneaker-Be")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sneaker-Be")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

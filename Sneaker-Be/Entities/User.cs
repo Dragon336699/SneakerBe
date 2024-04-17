@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Sneaker_Be.Entities
 {
-    public class User : IdentityUser
+    public class User 
     {
         public int Id { get; set; }
         public string FullName { get; set; }
@@ -17,6 +17,6 @@ namespace Sneaker_Be.Entities
         public DateTime created_at {  get; set; }
         public DateTime date_of_birth { get; set; }
         public DateTime updated_at { get; set;}
-        public List<Order> orders { get; set; } = new List<Order>();
+        //public List<Order> orders { get; set; } = new List<Order>();
     }
 }

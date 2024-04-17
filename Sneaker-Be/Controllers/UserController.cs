@@ -8,8 +8,12 @@ using Sneaker_Be.Entities;
 using Sneaker_Be.Features.Command.UserCommand;
 using Sneaker_Be.Features.Queries.UserQuery;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net.Mail;
 using System.Security.Claims;
 using System.Text;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Rest.Verify.V2.Service;
 
 namespace Sneaker_Be.Controllers
 {
@@ -42,7 +46,6 @@ namespace Sneaker_Be.Controllers
         [Route("users/login")]
         public async Task<IActionResult> Login(LoginDto loginDetail)
         {
-            //IActionResult response = Unauthorized();
             var user = await _mediator.Send(new GetUserByPhone(loginDetail.PhoneNumber));
             if (user == null) { return BadRequest("Người dùng không tồn tại"); }
             string token = GenerateJSonWebToken(user);

@@ -27,10 +27,6 @@ builder.Services.ConfigureAuthen(builder.Configuration);
 //builder.Services.AddTransient<ISmsSender, MessageServices>();
 //builder.Services.Configure<SMSOptions>(builder.Configuration);
 
-builder.Services.AddDbContext<SneakerDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection")));
-
-
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 var app = builder.Build();
 
