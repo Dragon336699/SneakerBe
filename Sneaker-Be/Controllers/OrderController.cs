@@ -43,12 +43,33 @@ namespace Sneaker_Be.Controllers
         [Route("orders/user/{id}")]
         public async Task<IActionResult> GetOrderDetail(int id)
         {
-            var res = await _mediator.Send(new GetOrderDetail(id));
+            var accessToken = Request.Headers[HeaderNames.Authorization].ToString().Substring("Bearer ".Length).Trim();
+            var handler = new JwtSecurityTokenHandler();
+            var jwt = handler.ReadJwtToken(accessToken);
+            var userId = jwt.Claims.FirstOrDefault(c => c.Type == "UserId").Value;
+            var res = await _mediator.Send(new GetOrderDetail(id, Int32.Parse(userId)));
             if (res != null)
             {
                 return Ok(res);
             }
             return BadRequest(new { message = "Lấy thông tin đơn hàng thất bại" });
+        }
+
+        [HttpGet]
+        [Authorize]
+        [Route("orders/user")]
+        public async Task<IActionResult> GetHistoryOrder()
+        {
+            var accessToken = Request.Headers[HeaderNames.Authorization].ToString().Substring("Bearer ".Length).Trim();
+            var handler = new JwtSecurityTokenHandler();
+            var jwt = handler.ReadJwtToken(accessToken);
+            var userId = jwt.Claims.FirstOrDefault(c => c.Type == "UserId").Value;
+            var res = await _mediator.Send(new GetHistoryOrder(Int32.Parse(userId)));
+            if (res != null)
+            {
+                return Ok(res);
+            }
+            return BadRequest(new { message = "Lấy lịch sử đơn hàng thất bại" });
         }
     }
 }

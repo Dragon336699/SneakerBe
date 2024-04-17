@@ -90,6 +90,16 @@
   },
   {
     "ContainingType": "Sneaker_Be.Controllers.OrderController",
+    "Method": "GetHistoryOrder",
+    "RelativePath": "api/sneaker/orders/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.OrderController",
     "Method": "GetOrderDetail",
     "RelativePath": "api/sneaker/orders/user/{id}",
     "HttpMethod": "GET",
@@ -147,6 +157,22 @@
         "Name": "max_price",
         "Type": "System.Single",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sneaker_Be.Controllers.ProductController",
+    "Method": "GetRelateProduct",
+    "RelativePath": "api/sneaker/products/related/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

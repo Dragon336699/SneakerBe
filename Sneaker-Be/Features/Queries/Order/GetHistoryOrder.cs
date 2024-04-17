@@ -3,13 +3,11 @@ using Sneaker_Be.Dtos;
 
 namespace Sneaker_Be.Features.Queries.Order
 {
-    public class GetOrderDetail : IRequest<InforOrderDto>
+    public class GetHistoryOrder : IRequest<List<HistoryOrderDto>>
     {
-        public int Id { get; set; }
         public int UserId { get; set; }
-        public GetOrderDetail(int id, int userId)
+        public GetHistoryOrder(int userId)
         {
-            Id = id;
             UserId = userId;
         }
     }

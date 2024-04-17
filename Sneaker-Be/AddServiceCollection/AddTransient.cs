@@ -41,6 +41,8 @@ namespace Sneaker_Be.AddTransientCollection
             services.AddTransient<IRequestHandler<SearchProducts, AllProductDto>, SearchProductHandler>();
             services.AddTransient<IRequestHandler<GetCart, ProductFromCartDto>, GetCartHandler>();
             services.AddTransient<IRequestHandler<GetOrderDetail, InforOrderDto>, GetOrderDetailHandler>();
+            services.AddTransient<IRequestHandler<GetHistoryOrder, List<HistoryOrderDto>>, GetHistoryOrderHandler>();
+            services.AddTransient<IRequestHandler<GetRelateProduct, AllProductDto>, GetRelateProductHandler>();
         }
 
         public static void ConfigureAuthen(this IServiceCollection services, IConfiguration configuration)

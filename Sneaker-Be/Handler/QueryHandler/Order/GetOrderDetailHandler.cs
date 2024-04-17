@@ -17,7 +17,10 @@ namespace Sneaker_Be.Handler.QueryHandler.Order
         public async Task<InforOrderDto> Handle(GetOrderDetail request, CancellationToken cancellationToken)
         {
             var query = "SELECT o.id, o.fullname, o.email, o.phone_number, o.address, o.note, o.shipping_method, o.order_date,o.status, o.payment_method, od.id as id, od.product_id, od.price, od.order_id, od.number_of_products, od.size, od.total_money, p.id as id, p.name,p.price, p.thumbnail, p.category_id, p.sale " +
-                "FROM orders o JOIN order_details od ON od.order_id = o.id JOIN products p ON p.id = od.product_id WHERE o.id = @Id";
+                "FROM orders o JOIN order_details od ON od.order_id = o.id JOIN products p ON p.id = od.product_id WHERE o.id = @Id AND o.user_id = @UserId";
+            var param = new DynamicParameters();
+            param.Add("Id", request.Id);
+            param.Add("UserId", request.UserId);
             using (var connection = _dapperContext.CreateConnection())
             {
                 var orderDictionary = new Dictionary<int, InforOrderDto>();
@@ -36,7 +39,7 @@ namespace Sneaker_Be.Handler.QueryHandler.Order
                         existingOrder.order_details.Add(orderDetail);
                         return existingOrder;
                     },
-                    new { request.Id },
+                    param,
                     splitOn: "id, id"
                 );
 

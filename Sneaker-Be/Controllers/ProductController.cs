@@ -53,6 +53,11 @@ namespace Sneaker_Be.Controllers
             return Ok(await _mediator.Send(new SearchProducts(key)));
         }
 
-
+        [HttpGet]
+        [Route("products/related/{id}")]
+        public async Task<IActionResult> GetRelateProduct(int id)
+        {
+            return Ok(await _mediator.Send(new GetRelateProduct(id)));
+        }
     }
 }
