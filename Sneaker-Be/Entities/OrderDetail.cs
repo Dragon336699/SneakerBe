@@ -2,12 +2,13 @@
 {
     public class OrderDetail
     {
-        public int Id { get; set; }
-        public int OrderId { get; set; }
-        public int ProductId { get; set; }
-        public Decimal Price { get; set; }
-        public int NumberOfProduct { get; set; }
-        public Decimal TotalMoney { get; set; }
-        public int Size { get; set; }
+        public int id { get; set; }
+        public int? order_id { get; set; }
+        public int product_id { get; set; }
+        public float price { get; set; }
+        public int number_of_products { get; set; }
+        public float total_money { get; set; }
+        public int size { get; set; }
+        public Product? Product { get; set; }
     }
 }

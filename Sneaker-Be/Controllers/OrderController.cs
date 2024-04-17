@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;
 using Sneaker_Be.Entities;
 using Sneaker_Be.Features.Command.OrderCommand;
+using Sneaker_Be.Features.Queries.Order;
 using System.IdentityModel.Tokens.Jwt;
 
 namespace Sneaker_Be.Controllers
@@ -30,11 +31,24 @@ namespace Sneaker_Be.Controllers
             var jwt = handler.ReadJwtToken(accessToken);
             var claims = jwt.Claims.FirstOrDefault(c => c.Type == "UserId");
             var userId = claims.Value;
-            order.UserId = Int32.Parse(userId);
+            order.user_id = Int32.Parse(userId);
             var res = await _mediator.Send(new PostOrderCommand(order));
-            if (res != null) {
-                return Ok(new {message = res});
+            if (res != 0) {
+                return Ok(new {message = "Đặt hàng thành công", id = res});
             } return BadRequest(new { message = "Đặt hàng thất bại" });
+        }
+
+        [HttpGet]
+        [Authorize]
+        [Route("orders/user/{id}")]
+        public async Task<IActionResult> GetOrderDetail(int id)
+        {
+            var res = await _mediator.Send(new GetOrderDetail(id));
+            if (res != null)
+            {
+                return Ok(res);
+            }
+            return BadRequest(new { message = "Lấy thông tin đơn hàng thất bại" });
         }
     }
 }

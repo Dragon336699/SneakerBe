@@ -18,7 +18,7 @@ namespace Sneaker_Be.Handler.CommandHandler.CartCommand
                 "BEGIN UPDATE carts SET quantity = quantity + @Quantity WHERE product_id = @ProductId AND size = @Size AND user_id = @UserId END " +
                 "ELSE BEGIN INSERT INTO carts (product_id,user_id, quantity,size) VALUES (@ProductId,@UserId,@Quantity,@Size) END";
             var param = new DynamicParameters();
-            param.Add("ProductId", request.ProductToCart.ProductId);
+            param.Add("ProductId", request.ProductToCart.product_id);
             param.Add("UserId", request.UserId);
             param.Add("Quantity", request.ProductToCart.Quantity);
             param.Add("Size", request.ProductToCart.Size);

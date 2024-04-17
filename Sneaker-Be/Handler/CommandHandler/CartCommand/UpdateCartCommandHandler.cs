@@ -16,7 +16,7 @@ namespace Sneaker_Be.Handler.CommandHandler.CartCommand
         {
             var query = "UPDATE carts SET product_id =@ProductId, quantity = @Quantity, size = @Size WHERE id = @Id";
             var param = new DynamicParameters();
-            param.Add("ProductId", request.Product.ProductId);
+            param.Add("ProductId", request.Product.product_id);
             param.Add("Quantity", request.Product.Quantity);
             param.Add("Size", request.Product.Size);
             param.Add("Id", request.Id);

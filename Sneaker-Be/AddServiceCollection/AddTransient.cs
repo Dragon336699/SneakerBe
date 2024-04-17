@@ -18,6 +18,8 @@ using Sneaker_Be.Features.Command.UserCommand;
 using Sneaker_Be.Features.Command.CartCommand;
 using Sneaker_Be.Features.Command.OrderCommand;
 using Sneaker_Be.Handler.CommandHandler.OrderCommand;
+using Sneaker_Be.Features.Queries.Order;
+using Sneaker_Be.Handler.QueryHandler.Order;
 
 namespace Sneaker_Be.AddTransientCollection
 {
@@ -29,7 +31,7 @@ namespace Sneaker_Be.AddTransientCollection
             services.AddTransient<IRequestHandler<RegisterUserCommand, string>, RegisterUserCommandHandler>();
             services.AddTransient<IRequestHandler<AddProductToCartCommand, string>, AddProductToCartCommandHandler>();
             services.AddTransient<IRequestHandler<UpdateCartCommand, string>, UpdateCartCommandHandler>();
-            services.AddTransient<IRequestHandler<PostOrderCommand, string>, PostOrderCommandHandler>();
+            services.AddTransient<IRequestHandler<PostOrderCommand, int>, PostOrderCommandHandler>();
 
             services.AddTransient<IRequestHandler<GetCategories, IEnumerable<Category>>, GetCategoriesHandler>();
             services.AddTransient<IRequestHandler<GetUserByPhone, User>, GetUserByPhoneHandler>();
@@ -38,6 +40,7 @@ namespace Sneaker_Be.AddTransientCollection
             services.AddTransient<IRequestHandler<GetProductViaPrice, AllProductDto>, GetProductViaPriceHandler>();
             services.AddTransient<IRequestHandler<SearchProducts, AllProductDto>, SearchProductHandler>();
             services.AddTransient<IRequestHandler<GetCart, ProductFromCartDto>, GetCartHandler>();
+            services.AddTransient<IRequestHandler<GetOrderDetail, InforOrderDto>, GetOrderDetailHandler>();
         }
 
         public static void ConfigureAuthen(this IServiceCollection services, IConfiguration configuration)
