@@ -1,6 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Sneaker_Be.Dtos;
+using Sneaker_Be.Entities;
+using Sneaker_Be.Features.Command.ProductCommand;
 using Sneaker_Be.Features.Queries;
 using Sneaker_Be.Features.Queries.ProductQuery;
 
@@ -14,10 +17,12 @@ namespace Sneaker_Be.Controllers
 
         private readonly IMediator _mediator;
         private IConfiguration _configuration;
-        public ProductController(IMediator mediator, IConfiguration configuration)
+        private readonly IWebHostEnvironment _environment;
+        public ProductController(IMediator mediator, IConfiguration configuration, IWebHostEnvironment environment)
         {
             _mediator = mediator;
             _configuration = configuration;
+            _environment = environment;
         }
         [HttpGet]
         [Route("categories")]
@@ -38,6 +43,14 @@ namespace Sneaker_Be.Controllers
         public async Task<IActionResult> GetProductById(int id)
         {
             return Ok(await _mediator.Send(new GetProductById(id)));
+        }
+
+        [HttpGet]
+        [Route("products/images/{imageName}")]
+        public async Task<IActionResult> GetProductImage(string imageName)
+        {
+            var ImagePathOnServer = Path.Combine(_environment.ContentRootPath, "Upload", imageName);
+            return PhysicalFile(ImagePathOnServer, "image/jpeg");
         }
 
         [HttpGet]
@@ -64,9 +77,69 @@ namespace Sneaker_Be.Controllers
         [HttpPost]
         [Route("products")]
         [Authorize(Roles = "2")]
-        public async Task<IActionResult> test(int id)
+        public async Task<IActionResult> UploadProduct([FromBody] ProductDto product)
         {
-            return Ok();
+            var res = await _mediator.Send(new UploadProductCommand(product));
+            if (res > 0)
+            {
+                return Ok( new
+                {
+                    productId = res,
+                    message = "Thêm sản phẩm thành công"
+                });
+            } return BadRequest(new
+            {
+                productId = 0,
+                message = "Thêm sản phẩm thất bại"
+            });
+        }
+
+        [HttpPost]
+        [Route("products/upload/{id}")]
+        [Authorize(Roles = "2")]
+        public async Task<IActionResult> UploadPhoto([FromForm] List<IFormFile> files, int id)
+        {
+            var ImageFolder = Path.Combine(_environment.ContentRootPath, "Upload");
+            const long maxSize = 10 * 1024 * 1024;
+            foreach (var file in files)
+            {
+                var fileExtension = Path.GetExtension(file.FileName).ToLower();
+                if ((fileExtension == ".jpg" || fileExtension == ".png" || fileExtension == ".jpeg") && file.Length <= maxSize)
+                {
+                    var fileName = Guid.NewGuid().ToString() + "_" + file.FileName;
+                    var filePath = Path.Combine(ImageFolder, fileName);
+                    using(FileStream fs = System.IO.File.Create(filePath))
+                    {
+                        file.CopyTo(fs);
+                    }
+                    try
+                    {
+                        await _mediator.Send(new UploadProductImageCommand(id, fileName));
+                    }
+                    catch (Exception ex)
+                    {
+                        return BadRequest(new
+                        {
+                            message = "Thêm hình ảnh phụ cho sản phẩm thất bại"
+                        });
+                    }
+                }
+            }
+            try
+            {
+                await _mediator.Send(new UpdateThumbnailProductCommand(id));
+                return Ok(new
+                {
+                    message = "Thêm thumbnail cho sản phẩm thành công"
+                }) ;
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new
+                {
+                    message = "Thêm thumbnail cho sản phẩm thất bại"
+                });
+            }
         }
     }
 }

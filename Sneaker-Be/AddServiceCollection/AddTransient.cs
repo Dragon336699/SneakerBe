@@ -20,6 +20,8 @@ using Sneaker_Be.Features.Command.OrderCommand;
 using Sneaker_Be.Handler.CommandHandler.OrderCommand;
 using Sneaker_Be.Features.Queries.Order;
 using Sneaker_Be.Handler.QueryHandler.Order;
+using Sneaker_Be.Handler.CommandHandler.ProductCommand;
+using Sneaker_Be.Features.Command.ProductCommand;
 
 namespace Sneaker_Be.AddTransientCollection
 {
@@ -32,6 +34,9 @@ namespace Sneaker_Be.AddTransientCollection
             services.AddTransient<IRequestHandler<AddProductToCartCommand, string>, AddProductToCartCommandHandler>();
             services.AddTransient<IRequestHandler<UpdateCartCommand, string>, UpdateCartCommandHandler>();
             services.AddTransient<IRequestHandler<PostOrderCommand, int>, PostOrderCommandHandler>();
+            services.AddTransient<IRequestHandler<UploadProductCommand, int>, UploadProductCommandHandler>();
+            services.AddTransient<IRequestHandler<UploadProductImageCommand, Boolean>, UploadProductImageCommandHandler>();
+            services.AddTransient<IRequestHandler<UpdateThumbnailProductCommand, Boolean>, UpdateThumbnailProductCommandHandler>();
 
             services.AddTransient<IRequestHandler<GetCategories, IEnumerable<Category>>, GetCategoriesHandler>();
             services.AddTransient<IRequestHandler<GetUserByPhone, User>, GetUserByPhoneHandler>();

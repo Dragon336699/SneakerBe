@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Options;
 using Sneaker_Be.AddTransientCollection;
 using Sneaker_Be.Context;
@@ -45,6 +46,21 @@ app.UseCors(options => options
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+                Path.Combine(Directory.GetCurrentDirectory(), "Images_Upload")),
+    RequestPath = "/Images_Upload"
+});
+//Enable directory browsing
+app.UseDirectoryBrowser(new DirectoryBrowserOptions
+{
+    FileProvider = new PhysicalFileProvider(
+                Path.Combine(Directory.GetCurrentDirectory(), "Images_Upload")),
+    RequestPath = "/Images_Upload"
+});
 
 app.MapControllers();
 

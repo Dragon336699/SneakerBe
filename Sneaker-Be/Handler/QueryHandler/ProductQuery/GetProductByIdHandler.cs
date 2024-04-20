@@ -26,10 +26,10 @@ namespace Sneaker_Be.Handler.QueryHandler.ProductQuery
                         if (!lookup.TryGetValue(product.Id, out var foundProduct))
                         {
                             foundProduct = product;
-                            foundProduct.productImages = new List<ProductImage>();
+                            foundProduct.product_images = new List<ProductImage>();
                             lookup.Add(foundProduct.Id, foundProduct);
                         }
-                        foundProduct.productImages.Add(productImage);
+                        foundProduct.product_images.Add(productImage);
                         return foundProduct;
                     },
                     new { Id = request.Id },

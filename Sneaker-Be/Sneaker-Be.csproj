@@ -30,8 +30,4 @@
     <PackageReference Include="Twilio" Version="7.0.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Command\ProductCommand\" />
-  </ItemGroup>
-
 </Project>
