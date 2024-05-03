@@ -14,6 +14,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using Twilio;
+using Twilio.Jwt.AccessToken;
 using Twilio.Rest.Api.V2010.Account;
 using Twilio.Rest.Verify.V2.Service;
 
@@ -50,7 +51,11 @@ namespace Sneaker_Be.Controllers
         {
             var user = await _mediator.Send(new GetUserByPhone(loginDetail.PhoneNumber));
             
-            if (user == null) { return BadRequest("Người dùng không tồn tại"); }
+            if (user == null) { return BadRequest(new
+            {
+                message = "Tài khoản chưa được đăng ký"
+            }); 
+            }
             byte[] salt = new byte[]
             {
                 153, 9, 194, 39, 4, 123, 47, 99, 167, 242, 240, 77, 130, 225, 71, 96
@@ -70,7 +75,10 @@ namespace Sneaker_Be.Controllers
                     token = token
                 });
             }
-            return BadRequest("Mật khẩu không chính xác");
+            return BadRequest(new
+            {
+                message = "Mật khẩu không chính xác"
+            });
         }
 
         [HttpGet]
@@ -94,6 +102,60 @@ namespace Sneaker_Be.Controllers
             };
             if (user == null) { return BadRequest("Lỗi thông tin"); }
             return Ok(userDetail);
+        }
+
+        [HttpGet]
+        [Route("users/getAll")]
+        [Authorize(Roles = "2")]
+        public async Task<IActionResult> GetAllUser()
+        {
+            var res = await _mediator.Send(new GetAllUser());
+            if (res != null)
+            {
+                return Ok(res);
+            } return BadRequest();
+        }
+
+        [HttpPut]
+        [Route("users/changeRole/{userId}")]
+        [Authorize(Roles = "2")]
+        public async Task<IActionResult> UpdateRoleUser([FromBody] int roleId, int userId)
+        {
+            var res = await _mediator.Send(new UpdateRoleUserCommand(roleId, userId));
+            if (res != null)
+            {
+                return Ok(new
+                {
+                    users = res,
+                    message = "Đổi vai trò người dùng thành công"
+                });
+            }
+            return BadRequest(new
+            {
+                message = "Đổi vai trò người dùng thất bại"
+            });
+
+        }
+
+        [HttpDelete]
+        [Route("users/delete/{userId}")]
+        [Authorize(Roles = "2")]
+        public async Task<IActionResult> DeleteUser(int userId)
+        {
+            var res = await _mediator.Send(new DeleteUserCommand(userId));
+            if (res != null)
+            {
+                return Ok(new
+                {
+                    users = res,
+                    message = "Xóa người dùng thành công"
+                });
+            }
+            return BadRequest(new
+            {
+                message = "Xóa người dùng thất bại"
+            });
+
         }
 
         private string GenerateJSonWebToken(User user)

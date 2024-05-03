@@ -14,7 +14,8 @@ namespace Sneaker_Be.Handler.CommandHandler.ProductCommand
         }
         public async Task<bool> Handle(UploadProductImageCommand request, CancellationToken cancellationToken)
         {
-            var query = "INSERT INTO product_image (product_id, image_url) " +
+            var query = "DELETE FROM product_image WHERE product_id=@ProductId " +
+                "INSERT INTO product_image (product_id, image_url) " +
                 "VALUES (@ProductId, @ImageUrl)";
             var param = new DynamicParameters();
             param.Add("ProductId", request.Id);

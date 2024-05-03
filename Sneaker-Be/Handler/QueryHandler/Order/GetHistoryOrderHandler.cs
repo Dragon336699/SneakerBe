@@ -22,7 +22,7 @@ namespace Sneaker_Be.Handler.QueryHandler.Order
                 "JOIN FirstProduct fp ON o.id = fp.order_id " + 
                 "JOIN order_details od2 ON od2.id = fp.first_product_id " +
                 "JOIN products p ON od2.product_id = p.id " +
-                "WHERE o.user_id = 23 GROUP BY o.id, o.status, o.total_money, o.order_date, p.name, p.thumbnail ORDER BY o.order_date DESC";
+                "WHERE o.user_id = @UserId GROUP BY o.id, o.status, o.total_money, o.order_date, p.name, p.thumbnail ORDER BY o.order_date DESC";
             using (var connection = _dapperContext.CreateConnection())
             {
                 var result = await connection.QueryAsync<HistoryOrderDto>(query, new { UserId = request.UserId });

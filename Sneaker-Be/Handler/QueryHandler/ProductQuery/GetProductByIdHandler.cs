@@ -15,7 +15,7 @@ namespace Sneaker_Be.Handler.QueryHandler.ProductQuery
         }
         public async Task<Product> Handle(GetProductById request, CancellationToken cancellationToken)
         {
-            var query = "SELECT * FROM products p JOIN product_image pi ON pi.product_id = p.id  WHERE p.id=@Id";
+            var query = "SELECT * FROM products p LEFT JOIN product_image pi ON pi.product_id = p.id  WHERE p.id=@Id";
             using (var connection = _dapperContext.CreateConnection())
             {
                 var lookup = new Dictionary<int, Product>();

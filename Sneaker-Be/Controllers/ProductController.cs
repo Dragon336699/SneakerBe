@@ -24,12 +24,6 @@ namespace Sneaker_Be.Controllers
             _configuration = configuration;
             _environment = environment;
         }
-        [HttpGet]
-        [Route("categories")]
-        public async Task<IActionResult> GetCategories()
-        {
-            return Ok(await _mediator.Send(new GetCategories()));
-        }
 
         [HttpGet]
         [Route("products/all")]
@@ -43,6 +37,13 @@ namespace Sneaker_Be.Controllers
         public async Task<IActionResult> GetProductById(int id)
         {
             return Ok(await _mediator.Send(new GetProductById(id)));
+        }
+
+        [HttpGet]
+        [Route("products/category/{id}")]
+        public async Task<IActionResult> GetProductsByCategoryId(int id)
+        {
+            return Ok(await _mediator.Send(new GetProductsByCategoryId(id)));
         }
 
         [HttpGet]
@@ -94,6 +95,44 @@ namespace Sneaker_Be.Controllers
             });
         }
 
+        [HttpPut]
+        [Route("products/{id}")]
+        [Authorize(Roles = "2")]
+        public async Task<IActionResult> UpdateProduct([FromBody] ProductDto product, int id)
+        {
+            var res = await _mediator.Send(new UpdateProductCommand(product, id));
+            if (res)
+            {
+                return Ok(new
+                {
+                    message = "Sửa sản phẩm thành công"
+                });
+            }
+            return BadRequest(new
+            {
+                message = "Sửa sản phẩm thất bại"
+            });
+        }
+
+        [HttpDelete]
+        [Route("products/{id}")]
+        [Authorize(Roles = "2")]
+        public async Task<IActionResult> DeleteProduct(int id)
+        {
+            var res = await _mediator.Send(new DeleteProductCommand(id));
+            if (res)
+            {
+                return Ok(new
+                {
+                    message = "Xóa sản phẩm thành công"
+                });
+            }
+            return BadRequest(new
+            {
+                message = "Xóa sản phẩm thất bại"
+            });
+        }
+
         [HttpPost]
         [Route("products/upload/{id}")]
         [Authorize(Roles = "2")]
@@ -130,14 +169,14 @@ namespace Sneaker_Be.Controllers
                 await _mediator.Send(new UpdateThumbnailProductCommand(id));
                 return Ok(new
                 {
-                    message = "Thêm thumbnail cho sản phẩm thành công"
+                    message = "Thêm sản phẩm mới thành công"
                 }) ;
             }
             catch (Exception ex)
             {
                 return BadRequest(new
                 {
-                    message = "Thêm thumbnail cho sản phẩm thất bại"
+                    message = "Thêm sản phẩm mới thất bại"
                 });
             }
         }
